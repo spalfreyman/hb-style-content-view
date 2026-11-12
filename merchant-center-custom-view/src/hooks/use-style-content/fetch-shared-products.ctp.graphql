@@ -1,0 +1,19 @@
+query FetchSharedProducts($where: String!) {
+  products(where: $where, limit: 50) {
+    total
+    results {
+      id
+      key
+      masterData {
+        current {
+          masterVariant {
+            attributesRaw(includeNames: ["color"]) {
+              name
+              value
+            }
+          }
+        }
+      }
+    }
+  }
+}

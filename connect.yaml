@@ -1,0 +1,11 @@
+deployAs:
+  - name: shared-style-content-view
+    applicationType: merchant-center-custom-view
+    configuration:
+      standardConfiguration:
+        - key: CUSTOM_VIEW_ID
+          description: The Custom View ID registered in the Merchant Center (Organization settings > Custom Views)
+          required: true
+        - key: CLOUD_IDENTIFIER
+          description: The cloud identifier of the Project's region
+          default: 'gcp-eu'
