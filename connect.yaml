@@ -1,5 +1,5 @@
 deployAs:
-  - name: shared-style-content-view
+  - name: merchant-center-custom-view
     applicationType: merchant-center-custom-view
     configuration:
       standardConfiguration:
